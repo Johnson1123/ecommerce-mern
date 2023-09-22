@@ -1,4 +1,4 @@
-import { apiSlice } from "./apiSlice.js";
+import apiSlice from "./sliceApi.js";
 const USERS_URL = "api/users";
 const SHOP_URL = "/api/shop";
 const PRODUCT_URL = "/api/product";

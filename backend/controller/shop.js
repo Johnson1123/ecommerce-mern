@@ -5,7 +5,6 @@ import sendMail from "../utils/sendEmail.js";
 import jwt from "jsonwebtoken";
 import sendToken from "../utils/jwtToken.js";
 import Shop from "../model/shop.js";
-import { useGetAllEventMutation } from "../../frontend/src/slice/userApiSlice.js";
 
 export const createShop = asyncHandler(async (req, res, next) => {
   try {

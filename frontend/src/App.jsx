@@ -208,24 +208,24 @@ function App() {
     },
   ]);
 
-  useEffect(() => {
-    (async () => {
-      const res = await loadSeller().unwrap();
-      await dispatch(setSeller({ ...res.seller }));
-    })();
-  }, []);
-  useEffect(() => {
-    (async () => {
-      const res = await getUser().unwrap();
-      await dispatch(setCredentials({ ...res.user }));
-    })();
-  }, []);
-  useEffect(() => {
-    (async () => {
-      const res = await getProducts().unwrap();
-      await dispatch(setProduct(res.products));
-    })();
-  }, []);
+  // useEffect(() => {
+  //   (async () => {
+  //     const res = await loadSeller().unwrap();
+  //     await dispatch(setSeller({ ...res.seller }));
+  //   })();
+  // }, []);
+  // useEffect(() => {
+  //   (async () => {
+  //     const res = await getUser().unwrap();
+  //     await dispatch(setCredentials({ ...res.user }));
+  //   })();
+  // }, []);
+  // useEffect(() => {
+  //   (async () => {
+  //     const res = await getProducts().unwrap();
+  //     await dispatch(setProduct(res.products));
+  //   })();
+  // }, []);
 
   return (
     <div className="App">
